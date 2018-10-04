@@ -63,26 +63,27 @@ namespace WindowsFormsAppPhoneBook
         private void btnSearch_Click(object sender, EventArgs e)
         {
             Person p = new Person();
-            string Name = textBox1.Text;
-            string LName = textBox2.Text;
-            string Phone = textBox3.Text;
+            p.FirstName = textBox1.Text;
+            p.LastName = textBox2.Text;
+            p.PhoneNumber = textBox3.Text;
 
-                foreach (var people in list)
-                {
-                
-                   if (textBox1.Text == Name && textBox1.Text == null && textBox3.Text == null)
-                    {
-                    debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
-                    }
-                    else if (textBox2.Text == LName && textBox1.Text == null && textBox3.Text == null)
+            foreach (var people in list)
+            {
+             
+                    if (people.FirstName == p.FirstName)
                     {
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
                     }
-                    else if (textBox3.Text == Phone && textBox1.Text == null && textBox2.Text == null)
+                    else if (people.LastName == p.LastName)
                     {
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
                     }
-                }                  
+                    else if (people.PhoneNumber == p.PhoneNumber)
+                    {
+                        debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
+                    }
+               
+            }                       
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,8 +129,16 @@ namespace WindowsFormsAppPhoneBook
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
+            txtResult.Text = "";
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            txtResult.Text = "";
+            list.Clear();
+        }
     }
 }
