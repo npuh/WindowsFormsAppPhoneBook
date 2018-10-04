@@ -69,6 +69,7 @@ namespace WindowsFormsAppPhoneBook
 
                 foreach (var people in list)
                 {
+
                 
                    if (textBox1.Text == Name && textBox1.Text == null && textBox3.Text == null)
                     {
@@ -83,6 +84,7 @@ namespace WindowsFormsAppPhoneBook
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
                     }
                 }                  
+
         }
 
         private void button1_Click(object sender, EventArgs e)
