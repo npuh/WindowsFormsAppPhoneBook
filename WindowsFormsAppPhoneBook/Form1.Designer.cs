@@ -46,7 +46,7 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(16, 213);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(75, 45);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -54,9 +54,9 @@
             // 
             // btnGet
             // 
-            this.btnGet.Location = new System.Drawing.Point(558, 52);
+            this.btnGet.Location = new System.Drawing.Point(348, 41);
             this.btnGet.Name = "btnGet";
-            this.btnGet.Size = new System.Drawing.Size(75, 23);
+            this.btnGet.Size = new System.Drawing.Size(75, 45);
             this.btnGet.TabIndex = 1;
             this.btnGet.Text = "GetList";
             this.btnGet.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(659, 51);
+            this.btnReset.Location = new System.Drawing.Point(459, 41);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(75, 45);
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             // 
             this.btnSearch.Location = new System.Drawing.Point(126, 213);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(75, 45);
             this.btnSearch.TabIndex = 10;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(231, 213);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 45);
             this.button1.TabIndex = 11;
             this.button1.Text = "Remove";
             this.button1.UseVisualStyleBackColor = true;
