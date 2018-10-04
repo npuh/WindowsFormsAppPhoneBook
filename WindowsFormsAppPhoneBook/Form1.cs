@@ -78,19 +78,20 @@ namespace WindowsFormsAppPhoneBook
 
                 foreach (var people in list)
                 {
-                    if (people.FirstName == Name && people.LastName == null && people.PhoneNumber == null)
-                    {
-                        debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
-                    }
-                    else if (people.LastName == LName && people.FirstName == null && people.PhoneNumber == null)
-                    {
-                        debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
-                    }
-                    else if (people.PhoneNumber == Phone && people.FirstName == null && people.LastName == null)
-                    {
-                        debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
-                    }
-                }                  
+
+                if (people.FirstName == Name && textBox2.Text=="" && textBox3.Text == "")
+                {
+                    debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
+                }
+                else if (people.LastName == LName && textBox1.Text == "" && textBox3.Text == "")
+                {
+                    debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
+                }
+                else if (people.PhoneNumber == Phone && textBox1.Text == "" && textBox2.Text == "")
+                {
+                    debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
+                }
+            }                  
         }
 
         private void button1_Click(object sender, EventArgs e)
