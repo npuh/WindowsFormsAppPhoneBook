@@ -46,7 +46,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Location = new System.Drawing.Point(16, 213);
             this.btnAdd.Name = "btnAdd";
@@ -78,6 +78,7 @@
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // textBox1
             // 
@@ -95,7 +96,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 157);
+            this.textBox3.Location = new System.Drawing.Point(142, 158);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(180, 22);
             this.textBox3.TabIndex = 5;
@@ -112,33 +113,42 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.labelName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F);
             this.labelName.Location = new System.Drawing.Point(13, 52);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(72, 17);
+            this.labelName.Size = new System.Drawing.Size(89, 22);
             this.labelName.TabIndex = 7;
             this.labelName.Text = "FirstName";
             // 
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
+            this.labelLastName.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.labelLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F);
             this.labelLastName.Location = new System.Drawing.Point(12, 106);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(72, 17);
+            this.labelLastName.Size = new System.Drawing.Size(88, 22);
             this.labelLastName.TabIndex = 8;
             this.labelLastName.Text = "LastName";
             // 
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
+            this.labelPhoneNumber.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.labelPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F);
             this.labelPhoneNumber.Location = new System.Drawing.Point(12, 160);
             this.labelPhoneNumber.Name = "labelPhoneNumber";
-            this.labelPhoneNumber.Size = new System.Drawing.Size(99, 17);
+            this.labelPhoneNumber.Size = new System.Drawing.Size(117, 22);
             this.labelPhoneNumber.TabIndex = 9;
             this.labelPhoneNumber.Text = "PhoneNumber";
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Location = new System.Drawing.Point(126, 213);
             this.btnSearch.Name = "btnSearch";
@@ -166,10 +176,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label1.Location = new System.Drawing.Point(25, 306);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 24);
+            this.label1.Size = new System.Drawing.Size(283, 26);
             this.label1.TabIndex = 12;
             this.label1.Text = "Search with one parameter only!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
