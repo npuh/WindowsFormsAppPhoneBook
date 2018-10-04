@@ -124,5 +124,14 @@ namespace WindowsFormsAppPhoneBook
         {
 
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+        }
+
+       
     }
 }
