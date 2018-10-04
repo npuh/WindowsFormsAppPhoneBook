@@ -22,15 +22,6 @@ namespace WindowsFormsAppPhoneBook
         {
 
         }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtResult_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void debugOutput(string strDebugText)
         {
             try
@@ -78,15 +69,16 @@ namespace WindowsFormsAppPhoneBook
 
                 foreach (var people in list)
                 {
-                    if (people.FirstName == Name && people.LastName == null && people.PhoneNumber == null)
+                
+                   if (textBox1.Text == Name && textBox1.Text == null && textBox3.Text == null)
+                    {
+                    debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
+                    }
+                    else if (textBox2.Text == LName && textBox1.Text == null && textBox3.Text == null)
                     {
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
                     }
-                    else if (people.LastName == LName && people.FirstName == null && people.PhoneNumber == null)
-                    {
-                        debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
-                    }
-                    else if (people.PhoneNumber == Phone && people.FirstName == null && people.LastName == null)
+                    else if (textBox3.Text == Phone && textBox1.Text == null && textBox2.Text == null)
                     {
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
                     }
@@ -109,6 +101,26 @@ namespace WindowsFormsAppPhoneBook
             list2.Remove(remove);
             list2 = list;
             debugOutput("Person removed from list!");
+        }
+
+        private void btnSearch_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btnSearch_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
