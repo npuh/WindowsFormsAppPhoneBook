@@ -67,9 +67,9 @@ namespace WindowsFormsAppPhoneBook
             p.LastName = textBox2.Text;
             p.PhoneNumber = textBox3.Text;
 
+
             foreach (var people in list)
-            {
-             
+            {            
                     if (people.FirstName == p.FirstName)
                     {
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
@@ -81,8 +81,7 @@ namespace WindowsFormsAppPhoneBook
                     else if (people.PhoneNumber == p.PhoneNumber)
                     {
                         debugOutput($"{people.FirstName}, {people.LastName}, {people.PhoneNumber}");
-                    }
-               
+                    }               
             }                       
         }
 
