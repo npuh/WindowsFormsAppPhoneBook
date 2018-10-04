@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnGet = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
@@ -40,36 +41,50 @@
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Location = new System.Drawing.Point(16, 213);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 45);
+
+            this.btnAdd.Size = new System.Drawing.Size(75, 34);
+
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnGet
             // 
-            this.btnGet.Location = new System.Drawing.Point(348, 41);
+
+            this.btnGet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnGet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGet.Location = new System.Drawing.Point(348, 43);
             this.btnGet.Name = "btnGet";
-            this.btnGet.Size = new System.Drawing.Size(75, 45);
+            this.btnGet.Size = new System.Drawing.Size(75, 41);
+
             this.btnGet.TabIndex = 1;
             this.btnGet.Text = "GetList";
-            this.btnGet.UseVisualStyleBackColor = true;
+            this.btnGet.UseVisualStyleBackColor = false;
             this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(459, 41);
+
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Location = new System.Drawing.Point(448, 44);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 45);
+            this.btnReset.Size = new System.Drawing.Size(75, 40);
+
+
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -130,29 +145,54 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Location = new System.Drawing.Point(126, 213);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 45);
+
+            this.btnSearch.Size = new System.Drawing.Size(75, 34);
+
             this.btnSearch.TabIndex = 10;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnSearch_MouseClick);
+            this.btnSearch.MouseHover += new System.EventHandler(this.btnSearch_MouseHover);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Tomato;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(231, 213);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 45);
+
+            this.button1.Size = new System.Drawing.Size(75, 34);
+
             this.button1.TabIndex = 11;
             this.button1.Text = "Remove";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label1.Location = new System.Drawing.Point(25, 306);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 24);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Search with one parameter only!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.labelPhoneNumber);
@@ -165,9 +205,11 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnGet);
             this.Controls.Add(this.btnAdd);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseHover += new System.EventHandler(this.Form1_MouseHover);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +229,7 @@
         private System.Windows.Forms.Label labelPhoneNumber;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
